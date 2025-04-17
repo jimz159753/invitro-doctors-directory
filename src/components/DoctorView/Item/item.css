@@ -1,0 +1,58 @@
+.doc-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.doc-card img {
+    width: 200px;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.doc-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doc-info .title {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 10px;
+    color:darkgrey; 
+}
+
+.doc-details {
+    width: 300px;
+}
+
+.doc-details h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.doc-details button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.doc-details .no-availability {
+    background-color: #f44336;
+    font-size: 16px;
+    margin-top: 10px;
+}

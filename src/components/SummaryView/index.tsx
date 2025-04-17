@@ -1,0 +1,19 @@
+import { IAppointment } from "../interfaces";
+import AppointmentList from "./Appointments/List";
+
+interface SummaryViewProps {
+  appointments: IAppointment[];
+}
+
+const SummaryView = ({ appointments }: SummaryViewProps) => (
+  <div>
+    <h2>My Appointments</h2>
+    {appointments.length === 0 ? (
+      <p>No appointments booked yet.</p>
+    ) : (
+      <AppointmentList appointments={appointments} />
+    )}
+  </div>
+);
+
+export default SummaryView;

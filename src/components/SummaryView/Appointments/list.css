@@ -1,0 +1,43 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.appt-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.appt-item h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.appt-item h5 {
+    margin: 0.5rem 0;
+    color: #ccc;
+    margin-right: 10px;
+}
+    
+.appt-item p {
+    margin: 0.5rem 0;
+    color: black;
+    font-size: 0.875rem;
+}
+
+.appt-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,58 @@
+import { IDoctor } from "../components/interfaces";
+
+export const doctorsMock: IDoctor[] = [
+  {
+    id: 1,
+    name: "Dr. Sarah Connor",
+    specialty: "Cardiology",
+    location: "New York",
+    availability: ["10:00 AM", "2:00 PM"],
+    photo: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: 4.7,
+  },
+  {
+    id: 2,
+    name: "Dr. John Doe",
+    specialty: "Dermatology",
+    location: "San Francisco",
+    availability: ["1:00 PM", "4:00 PM"],
+    photo: "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: 4.5,
+  },
+  {
+    id: 3,
+    name: "Dr. Emily Zhang",
+    specialty: "Pediatrics",
+    location: "Los Angeles",
+    availability: ["9:00 AM", "3:00 PM"],
+    photo: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2500&auto=format&fit=crop",
+    rating: 4.9,
+  },
+  {
+    id: 4,
+    name: "Dr. Carlos Rivera",
+    specialty: "Neurology",
+    location: "Chicago",
+    availability: ["11:00 AM", "5:00 PM"],
+    photo: "https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: 4.6,
+  },
+  {
+    id: 5,
+    name: "Dr. Aisha Malik",
+    specialty: "Orthopedics",
+    location: "Houston",
+    availability: ["8:30 AM", "12:30 PM"],
+    photo: "https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: 4.8,
+  },
+  {
+    id: 6,
+    name: "Dr. Michael Tan",
+    specialty: "Psychiatry",
+    location: "Seattle",
+    availability: ["10:30 AM", "1:30 PM"],
+    photo: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: 4.4,
+  },
+];
