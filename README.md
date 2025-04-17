@@ -1,4 +1,4 @@
-# 🏥 Appointment Booking UI – Digital Crafters
+# 🏥 Appointment Booking UI
 
 A fully responsive and accessible healthcare appointment booking interface. This project focuses on front-end layout, interaction, accessibility, and code quality using **React** and **CSS**.
 
