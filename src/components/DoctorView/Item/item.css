@@ -15,6 +15,18 @@
     border-radius: 8px 0 0 8px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 430px) {
+
+    .doc-card {
+        flex-wrap: wrap;
+    }
+
+    .doc-card img {
+        width: 100%;
+    }
+}
+
 .doc-info {
     display: flex;
     flex-direction: row;
@@ -24,14 +36,16 @@
 }
 
 .doc-info .title {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
     margin-top: 10px;
-    color:darkgrey; 
+    color:#979EA2; 
+    font-weight: bold;
 }
 
 .doc-details {
     width: 300px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +77,7 @@
 
 .doc-details .no-availability {
     background-color: #f44336;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
     color: white;
     border: none;

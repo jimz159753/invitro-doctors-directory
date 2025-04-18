@@ -1,12 +1,44 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .app-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 15%;
-}   
+    font-family: 'Roboto', sans-serif;
+}
 
 .tabs {
     display: flex;
@@ -23,7 +55,10 @@
     font-weight: 600;
     transition: all 0.5s linear;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #282c34;
 }
 
 .active {
@@ -39,13 +74,40 @@
     object-fit: cover;
 }
 
+.summary-view {
+    margin-bottom: 100px;
+}
+
 .app-container .summary-view h1 {
     text-align: center;
     color: white;
+}
+
+.app-container .summary-view p {
+    color: black;
 }
 
 .controllers {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }	
+
+.footer-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -11,7 +11,8 @@ ul {
 .appt-item {
     display: flex;
     flex-direction: column;
-    width: 160px;
+    gap: 5px;
+    width: 240px;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -20,7 +21,7 @@ ul {
 }
 
 .appt-item h3 {
-    margin: 0;
+    margin: 0 0 10px 0;
     font-size: 1.25rem;
     color: black;
     text-align: center;
@@ -28,7 +29,7 @@ ul {
 
 .appt-item h5 {
     margin: 0.5rem 0;
-    color: #ccc;
+    color: #979EA2;
     margin-right: 10px;
 }
     

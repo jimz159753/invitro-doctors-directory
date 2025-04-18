@@ -1,6 +1,6 @@
 import { IDoctor } from "../interfaces";
 import "./modal.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface ModalProps {
   selectedDoctor?: IDoctor;
@@ -14,6 +14,15 @@ const Modal = ({
   setSelectedDoctor,
 }: ModalProps) => {
   const [timeSlot, setTimeSlot] = useState<string>("");
+  const currentSlot = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (selectedDoctor) {
+      if (currentSlot.current) {
+        currentSlot.current.focus();
+      }
+    }
+  }, [selectedDoctor]);
 
   const handleCancel = () => {
     setSelectedDoctor(undefined);
@@ -47,9 +56,11 @@ const Modal = ({
               {selectedDoctor.availability.map((time, idx) => (
                 <li key={idx}>
                   <button
+                    ref={idx === 0 ? currentSlot : null}
                     className={"time-slot-button " + (timeSlot === time ? "selected" : "")}
                     onClick={() => setTimeSlot(time)}
                     aria-pressed={timeSlot === time}
+                    aria-label="Select time slot"
                   >
                     {time}
                   </button>

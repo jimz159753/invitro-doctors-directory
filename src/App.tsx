@@ -37,11 +37,14 @@ const App = () => {
     <div>
       <img
         className="background-image"
-        src={require("./assets/hospital-background.png")}
+        src={require("./assets/images/hospital-background.png")}
         alt="doctor"
       />
+      <div className="navbar">
+        <img src={require('./assets/images/book.png')} alt="book" />
+        <h2>Doctor's Directory</h2>
+      </div>
       <div className="app-container">
-        <h1>Doctor Directory</h1>
         <TabsController
           selectedTab={selectedTab}
           setSelectedTab={setSelectedTab}
@@ -66,6 +69,11 @@ const App = () => {
         ) : (
           <SummaryView appointments={appointments} />
         )}
+      </div>
+      <div className="footer">
+        <p className="footer-text">
+          © 2023 Doctor's Directory. All rights reserved.
+        </p>
       </div>
     </div>
   );

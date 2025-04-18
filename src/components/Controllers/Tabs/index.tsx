@@ -8,18 +8,20 @@ const TabsController = ({
   setSelectedTab,
 }: TabsControllerProps) => (
   <div className="tabs">
-    <h4
+    <button
       className={`tab ${selectedTab === "doctors" ? "active" : ""}`}
       onClick={() => setSelectedTab("doctors")}
+      aria-label="Doctors Tab"
     >
       Doctors
-    </h4>
-    <h4
+    </button>
+    <button
       className={`tab ${selectedTab === "appointments" ? "active" : ""}`}
       onClick={() => setSelectedTab("appointments")}
+      aria-label="Appointments Tab"
     >
       My Appointments
-    </h4>
+    </button>
   </div>
 );
 
