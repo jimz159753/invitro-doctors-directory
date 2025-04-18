@@ -1,3 +1,19 @@
+# 🚀 Run the Application
+
+Follow the steps below to get the app up and running:
+
+## 📦 Install Dependencies
+
+```bash
+npm install
+```
+
+## 🖱️Start App
+
+```bash
+npm run start
+```
+
 # 🏥 Appointment Booking UI
 
 A fully responsive and accessible healthcare appointment booking interface. This project focuses on front-end layout, interaction, accessibility, and code quality using **React** and **CSS**.
