@@ -24,6 +24,11 @@
 
     .doc-card img {
         width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .doc-details button {
+        border-radius: 0 0 8px 8px !important;
     }
 }
 
