@@ -72,7 +72,7 @@ const App = () => {
       </div>
       <div className="footer">
         <p className="footer-text">
-          © 2023 Doctor's Directory. All rights reserved.
+          © 2025 Doctor's Directory. All rights reserved.
         </p>
       </div>
     </div>
