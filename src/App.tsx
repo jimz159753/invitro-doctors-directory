@@ -5,11 +5,12 @@ import { doctorsMock } from "./data/mockData";
 import Modal from "./components/Modal";
 import SummaryView from "./components/SummaryView";
 import DoctorView from "./components/DoctorView";
-import FilterController from "./components/FilterController";
-import './App.css';
+import FilterController from "./components/Controllers/Filter";
+import "./App.css";
+import TabsController from "./components/Controllers/Tabs";
 
 const App = () => {
-  const [filter, setFilter] = useState<string>('All');
+  const [filter, setFilter] = useState<string>("All");
   const [selectedDoctor, setSelectedDoctor] = useState<IDoctor>();
   const [appointments, setAppointments] = useState<IAppointment[]>([]);
   const [selectedTab, setSelectedTab] = useState<string>("doctors");
@@ -33,26 +34,25 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <h1>Doctor Directory</h1>
-      <div className="tabs">
-        <button
-          className={`tab ${selectedTab === "doctors" ? "active" : ""}`}
-          onClick={() => setSelectedTab("doctors")}
-        >
-          Doctors
-        </button>
-        <button
-          className={`tab ${selectedTab === "appointments" ? "active" : ""}`}
-          onClick={() => setSelectedTab("appointments")}
-        >
-          My Appointments
-        </button>
-      </div>
-      {
-        selectedTab === "doctors" ? (
+    <div>
+      <img
+        className="background-image"
+        src={require("./assets/hospital-background.png")}
+        alt="doctor"
+      />
+      <div className="app-container">
+        <h1>Doctor Directory</h1>
+        <TabsController
+          selectedTab={selectedTab}
+          setSelectedTab={setSelectedTab}
+        />
+        {selectedTab === "doctors" ? (
           <>
-            <FilterController filter={filter} setFilter={setFilter} specialties={specialties} />
+            <FilterController
+              filter={filter}
+              setFilter={setFilter}
+              specialties={specialties}
+            />
             <DoctorView
               filteredDoctors={filteredDoctors}
               setSelectedDoctor={setSelectedDoctor}
@@ -65,9 +65,8 @@ const App = () => {
           </>
         ) : (
           <SummaryView appointments={appointments} />
-        )
-      }
-      
+        )}
+      </div>
     </div>
   );
 };

@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:baseline;
+    width: 70%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
 }   
 
 .tabs {
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -16,16 +18,34 @@
 .tab {
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
     padding: 10px;
     border: none;
-    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .active {
-    background-color: #007bff;
     color: white;
-    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    border-bottom: 2px solid white;
 }
+
+.background-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.app-container .summary-view h1 {
+    text-align: center;
+    color: white;
+}
+
+.controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	

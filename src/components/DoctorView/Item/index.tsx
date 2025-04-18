@@ -30,13 +30,13 @@ const DocItem = ({ doc, setSelectedDoctor }: DocCardProps) => (
           onClick={() => setSelectedDoctor(doc)}
           aria-label={`Book appointment with ${doc.name}`}
         >
-          Book Appointment
+          BOOK AN APPOINMENT
         </button>) : (
           <button
             className="no-availability"
             disabled
           >
-            No Availability
+            NO AVAILABILITY
           </button>
         )
       }

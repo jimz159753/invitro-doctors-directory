@@ -6,8 +6,7 @@ interface SummaryViewProps {
 }
 
 const SummaryView = ({ appointments }: SummaryViewProps) => (
-  <div>
-    <h2>My Appointments</h2>
+  <div className="summary-view">
     {appointments.length === 0 ? (
       <p>No appointments booked yet.</p>
     ) : (

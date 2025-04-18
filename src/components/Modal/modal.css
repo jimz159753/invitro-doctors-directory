@@ -21,6 +21,7 @@
     flex-direction: row; 
     gap: 10px; 
     padding: unset;
+    justify-content: flex-start;
 }
 
 .modal-body li {
@@ -43,19 +44,27 @@
     color: white; 
     border: none; 
     padding: 10px 20px; 
-    border-radius: 5px; 
+    border-radius: 20px;
     cursor: pointer; 
     margin-top: 20px;
 }
 
+.cancel-button:hover {
+    filter: brightness(125%);
+}
+
 .confirm-btn {
-    background-color: #28a745; 
+    background-color: #10B8B9; 
     color: white; 
     border: none; 
     padding: 10px 20px; 
-    border-radius: 5px; 
+    border-radius: 20px; 
     cursor: pointer; 
     margin-top: 20px;
+}
+
+.confirm-btn:hover {
+    filter: brightness(125%);
 }
 
 .selected {
@@ -64,7 +73,8 @@
 
 .btns-container {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: end; 
     align-items: center; 
-    margin-top: 20px;
+    margin-top: 15px;
+    gap: 12px;
 }

@@ -1,8 +1,6 @@
 .doc-card {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding: 10px;
     width: fit-content;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -14,7 +12,7 @@
 .doc-card img {
     width: 200px;
     height: 170px;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     object-fit: cover;
 }
 .doc-info {
@@ -34,6 +32,10 @@
 
 .doc-details {
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .doc-details h2 {
@@ -42,17 +44,32 @@
 }
 
 .doc-details button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+    background-color: white;
+    color: #10B8B9;
+    border-top: 1px solid #10B8B9;
+    border-bottom: none;
+    border-radius: 0 0 8px 0;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
     cursor: pointer;
+    width: 100%;
+}
+
+.doc-details button:hover {
+    filter: brightness(125%);
 }
 
 .doc-details .no-availability {
     background-color: #f44336;
     font-size: 16px;
     margin-top: 10px;
+    color: white;
+    border: none;
+    cursor: auto;
+}
+
+.doc-details .no-availability:hover {
+    filter: none;
 }

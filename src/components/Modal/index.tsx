@@ -20,6 +20,15 @@ const Modal = ({
     setTimeSlot("");
   };
 
+  const handleConfirm = () => {
+    if (selectedDoctor && timeSlot) {
+      bookAppointment(selectedDoctor, timeSlot);
+      setTimeSlot("");
+    } else {
+      alert("Please select a time slot before confirming.");
+    }
+  }
+
   return (
     <div>
       {selectedDoctor && (
@@ -54,7 +63,7 @@ const Modal = ({
               >
                 Cancel
               </button>
-              <button className="confirm-btn" onClick={() => bookAppointment(selectedDoctor, timeSlot)} >Confirm</button>
+              <button className="confirm-btn" onClick={handleConfirm}>Confirm</button>
             </div>
           </div>
         </div>
