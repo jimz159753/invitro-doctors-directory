@@ -7,7 +7,7 @@ interface DocCardProps {
 }
 
 const DocItem = ({ doc, setSelectedDoctor }: DocCardProps) => (
-  <div className="doc-card" role="region" aria-labelledby={`doctor-${doc.id}`}>
+  <div className="doc-card" role="card" aria-labelledby={`doctor-${doc.id}`}>
     <img src={doc.photo} alt={doc.name} />
     <div className="doc-details">
         <h2 id={`doctor-${doc.id}`}>{doc.name}</h2>
